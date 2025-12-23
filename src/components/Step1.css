@@ -1,0 +1,145 @@
+.step1 {
+  padding: 6rem 0;
+  background: var(--bg-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.step1-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.step-number-large {
+  font-size: 15rem;
+  font-weight: 700;
+  line-height: 1;
+  background: var(--gradient-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.3;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: 0;
+  user-select: none;
+}
+
+.step1-main {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.step1-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.step1-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.step1-title .title-highlight {
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.step1-description {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.step1-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.step-card {
+  background: var(--gradient-light);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 107, 53, 0.1);
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+}
+
+.step-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--gradient-orange);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.step-icon {
+  font-size: 3.5rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.step-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.step-card-description {
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+@media (max-width: 968px) {
+  .step-number-large {
+    font-size: 10rem;
+    left: -30px;
+    top: -30px;
+  }
+  
+  .step1-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .step1-title {
+    font-size: 2rem;
+  }
+  
+  .step1-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .step-number-large {
+    font-size: 8rem;
+  }
+}
+

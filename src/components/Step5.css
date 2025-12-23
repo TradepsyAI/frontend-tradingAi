@@ -1,0 +1,158 @@
+.step5 {
+  padding: 6rem 0;
+  background: var(--bg-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.step5-content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  position: relative;
+}
+
+.step-number-large {
+  font-size: 15rem;
+  font-weight: 700;
+  line-height: 1;
+  background: var(--gradient-light);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.3;
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: 0;
+  user-select: none;
+}
+
+.step5-main {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.step5-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.step5-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+}
+
+.step5-title .title-highlight {
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.step5-description {
+  font-size: 1.1rem;
+  color: var(--text-gray);
+  line-height: 1.8;
+}
+
+.performance-card {
+  background: var(--text-dark);
+  border-radius: 20px;
+  padding: 2.5rem;
+  border: 4px solid var(--primary-orange);
+  box-shadow: 0 8px 30px rgba(255, 107, 53, 0.3);
+}
+
+.performance-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.performance-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.performance-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.chart-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+@media (max-width: 968px) {
+  .step-number-large {
+    font-size: 10rem;
+    left: -30px;
+    top: -30px;
+  }
+  
+  .step5-content {
+    flex-direction: column;
+  }
+  
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .step5-title {
+    font-size: 2rem;
+  }
+  
+  .step-number-large {
+    font-size: 8rem;
+  }
+  
+  .performance-card {
+    padding: 1.5rem;
+  }
+  
+  .performance-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+

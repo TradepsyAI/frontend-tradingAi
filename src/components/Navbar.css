@@ -1,0 +1,99 @@
+.navbar {
+  background-color: var(--bg-white);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-links a.active {
+  color: var(--primary-orange);
+  font-weight: 600;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  background: var(--gradient-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 2px 4px rgba(255, 107, 53, 0.3));
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--primary-orange);
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-login {
+  background: transparent;
+  border: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.btn-login:hover {
+  color: var(--primary-orange);
+}
+
+.btn-primary {
+  background: var(--gradient-orange);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+@media (max-width: 968px) {
+  .navbar-links {
+    display: none;
+  }
+}
+
