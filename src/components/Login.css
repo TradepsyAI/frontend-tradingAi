@@ -34,6 +34,66 @@
 .login-subtitle {
   font-size: 1.1rem;
   color: var(--text-gray);
+  margin-bottom: 1rem;
+}
+
+.backend-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #FFF3CD;
+  border: 1px solid #FFC107;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.notice-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.notice-text {
+  color: #856404;
+  font-weight: 500;
+}
+
+.demo-credentials {
+  background: #F0F8FF;
+  border: 1px solid #4A90E2;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.demo-label {
+  font-size: 0.9rem;
+  color: #4A90E2;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.demo-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.demo-email,
+.demo-password {
+  display: block;
+}
+
+.demo-email strong,
+.demo-password strong {
+  color: #4A90E2;
+  font-weight: 700;
 }
 
 .social-login {

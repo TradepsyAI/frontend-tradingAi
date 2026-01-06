@@ -12,8 +12,9 @@ export const AuthProvider = ({ children }) => {
     const userData = localStorage.getItem('userData');
     
     if (token && userData) {
+      const parsedUser = JSON.parse(userData);
       setIsAuthenticated(true);
-      setUser(JSON.parse(userData));
+      setUser(parsedUser);
     }
   }, []);
 
@@ -33,6 +34,19 @@ export const AuthProvider = ({ children }) => {
       };
       
       const token = 'mock-token-' + Date.now();
+      
+      // Check if user has existing data with onboarding status
+      const existingUserData = localStorage.getItem('userData');
+      if (existingUserData) {
+        const existing = JSON.parse(existingUserData);
+        if (existing.email === email) {
+          userData.onboardingCompleted = existing.onboardingCompleted || false;
+        } else {
+          userData.onboardingCompleted = false;
+        }
+      } else {
+        userData.onboardingCompleted = false;
+      }
       
       localStorage.setItem('authToken', token);
       localStorage.setItem('userData', JSON.stringify(userData));
@@ -58,7 +72,8 @@ export const AuthProvider = ({ children }) => {
       const userData = {
         id: 1,
         email: email,
-        name: name || email.split('@')[0]
+        name: name || email.split('@')[0],
+        onboardingCompleted: false // New signups haven't completed onboarding
       };
       
       const token = 'mock-token-' + Date.now();
@@ -81,6 +96,9 @@ export const AuthProvider = ({ children }) => {
       // Example: const response = await fetch(`/api/auth/${provider}`, { ... });
       
       const token = `${provider}-token-${Date.now()}`;
+      
+      // New social logins haven't completed onboarding
+      userData.onboardingCompleted = false;
       
       localStorage.setItem('authToken', token);
       localStorage.setItem('userData', JSON.stringify(userData));
