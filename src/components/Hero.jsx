@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Hero.css';
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [chatInput, setChatInput] = useState('');
 
   const handleSubmit = (e) => {
@@ -53,6 +55,7 @@ const Hero = () => {
           <div className="hero-actions">
             <motion.button
               className="btn-get-started"
+              onClick={() => navigate('/signup')}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Features.css';
 
@@ -25,6 +26,8 @@ const features = [
 ];
 
 const Features = () => {
+  const navigate = useNavigate();
+  
   return (
     <section className="features" id="features">
       <div className="container">
@@ -71,6 +74,7 @@ const Features = () => {
         >
           <motion.button
             className="btn-cta"
+            onClick={() => navigate('/signup')}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
