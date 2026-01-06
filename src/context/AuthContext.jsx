@@ -6,11 +6,7 @@ export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState(null);
 
-  // Dummy email for testing
-  const DUMMY_EMAIL = 'demo@traderai.com';
-  const DUMMY_PASSWORD = 'demo123';
-
-  // Check if user is logged in on mount (from localStorage)
+  // Check if user is logged in on mount (from localStorage or token)
   useEffect(() => {
     const token = localStorage.getItem('authToken');
     const userData = localStorage.getItem('userData');
@@ -22,15 +18,21 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = async (email, password) => {
-    // Dummy email check for testing
-    if (email === DUMMY_EMAIL && password === DUMMY_PASSWORD) {
+    try {
+      // TODO: Replace with actual backend API call
+      // Example: const response = await fetch('/api/auth/login', { ... });
+      
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Mock user data
       const userData = {
         id: 1,
         email: email,
-        name: 'Demo User'
+        name: email.split('@')[0]
       };
       
-      const token = 'dummy-token-' + Date.now();
+      const token = 'mock-token-' + Date.now();
       
       localStorage.setItem('authToken', token);
       localStorage.setItem('userData', JSON.stringify(userData));
@@ -39,25 +41,27 @@ export const AuthProvider = ({ children }) => {
       setUser(userData);
       
       return { success: true };
+    } catch (error) {
+      return { success: false, error: error.message };
     }
-    
-    // Backend authentication is not implemented yet
-    return { 
-      success: false, 
-      error: 'Backend authentication is under development. Please try again later.' 
-    };
   };
 
   const signup = async (email, password, name) => {
-    // Dummy email check for testing
-    if (email === DUMMY_EMAIL && password === DUMMY_PASSWORD) {
+    try {
+      // TODO: Replace with actual backend API call
+      // Example: const response = await fetch('/api/auth/signup', { ... });
+      
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Mock user data
       const userData = {
         id: 1,
         email: email,
-        name: name || 'Demo User'
+        name: name || email.split('@')[0]
       };
       
-      const token = 'dummy-token-' + Date.now();
+      const token = 'mock-token-' + Date.now();
       
       localStorage.setItem('authToken', token);
       localStorage.setItem('userData', JSON.stringify(userData));
@@ -66,27 +70,33 @@ export const AuthProvider = ({ children }) => {
       setUser(userData);
       
       return { success: true };
+    } catch (error) {
+      return { success: false, error: error.message };
     }
-    
-    // Backend authentication is not implemented yet
-    return { 
-      success: false, 
-      error: 'Backend authentication is under development. Please try again later.' 
-    };
   };
 
   const socialLogin = async (provider, userData) => {
-    // Backend authentication is not implemented yet
-    return { 
-      success: false, 
-      error: 'Backend authentication is under development. Please try again later.' 
-    };
+    try {
+      // TODO: Replace with actual social auth API calls
+      // Example: const response = await fetch(`/api/auth/${provider}`, { ... });
+      
+      const token = `${provider}-token-${Date.now()}`;
+      
+      localStorage.setItem('authToken', token);
+      localStorage.setItem('userData', JSON.stringify(userData));
+      
+      setIsAuthenticated(true);
+      setUser(userData);
+      
+      return { success: true };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
   };
 
   const logout = () => {
     localStorage.removeItem('authToken');
     localStorage.removeItem('userData');
-    localStorage.removeItem('onboardingQuiz');
     setIsAuthenticated(false);
     setUser(null);
   };

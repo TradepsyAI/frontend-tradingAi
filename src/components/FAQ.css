@@ -99,8 +99,16 @@
     padding: 4rem 0;
   }
 
+  .faq-header {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
   .faq-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .faq-question {
@@ -119,5 +127,18 @@
     font-size: 0.95rem;
   }
 }
+
+@media (max-width: 480px) {
+  .faq-header {
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+
+  .faq-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+}
+
 
 

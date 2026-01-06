@@ -282,12 +282,21 @@
     padding: 4rem 0;
   }
 
+  .pricing-header {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+
   .pricing-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .pricing-question {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
   }
 
   .pricing-card {
@@ -301,6 +310,24 @@
   .toggle-option {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-header {
+    margin-bottom: 1.5rem;
+    padding: 0;
+  }
+
+  .pricing-title {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  .pricing-question {
+    font-size: 0.85rem;
+    padding: 0;
   }
 }
 
