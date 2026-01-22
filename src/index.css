@@ -7,9 +7,12 @@
 :root {
   --primary-orange: #FF6B35;
   --primary-yellow: #FFA500;
+  --primary-gold: #FFD700;
   --gradient-orange: linear-gradient(135deg, #FF6B35 0%, #FFA500 100%);
   --gradient-yellow: linear-gradient(135deg, #FFA500 0%, #FFD700 100%);
+  --gradient-gold: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
   --gradient-light: linear-gradient(180deg, #FFE5CC 0%, #FFF8F0 100%);
+  --gradient-navbar: linear-gradient(135deg, #FFFBF0 0%, #FFF9E6 50%, #FFFEF5 100%);
   --text-dark: #1a1a1a;
   --text-gray: #4a4a4a;
   --bg-light: #FFFBF7;

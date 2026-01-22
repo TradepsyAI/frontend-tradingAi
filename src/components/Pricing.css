@@ -22,7 +22,7 @@
 }
 
 .pricing-title .title-gradient {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -65,9 +65,9 @@
 }
 
 .toggle-option.active {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   color: white;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
 
 .toggle-option:not(.active) {
@@ -75,8 +75,8 @@
 }
 
 .toggle-option:not(.active):hover {
-  color: var(--primary-orange);
-  background: rgba(255, 107, 53, 0.05);
+  color: var(--primary-gold);
+  background: rgba(255, 215, 0, 0.05);
 }
 
 .pricing-plans {
@@ -102,27 +102,27 @@
 }
 
 .pricing-card:hover {
-  border-color: var(--primary-orange);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
+  border-color: var(--primary-gold);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
   transform: translateY(-5px);
 }
 
 .pricing-card.pro {
-  border-color: var(--primary-orange);
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.2);
+  border-color: var(--primary-gold);
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.2);
 }
 
 .save-badge {
   position: absolute;
   top: -12px;
   right: 2rem;
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   font-size: 0.85rem;
   font-weight: 600;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
 }
 
 .plan-header {
@@ -137,7 +137,7 @@
 }
 
 .plan-name.pro-name {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -197,24 +197,24 @@
 
 .essential-cta {
   background: transparent;
-  border: 2px solid var(--primary-orange);
-  color: var(--primary-orange);
+  border: 2px solid var(--primary-gold);
+  color: var(--primary-gold);
 }
 
 .essential-cta:hover {
   background: var(--gradient-light);
-  border-color: var(--primary-orange);
-  color: var(--primary-orange);
+  border-color: var(--primary-gold);
+  color: var(--primary-gold);
 }
 
 .pro-cta {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   color: white;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
 
 .pro-cta:hover {
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
   transform: translateY(-2px);
 }
 
@@ -241,7 +241,7 @@
 .feature-icon {
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--primary-orange);
+  color: var(--primary-gold);
   min-width: 20px;
 }
 
@@ -263,7 +263,7 @@
 }
 
 .plan-breakdown:hover {
-  color: var(--primary-orange);
+  color: var(--primary-gold);
 }
 
 @media (max-width: 968px) {

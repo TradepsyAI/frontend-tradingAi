@@ -52,7 +52,7 @@
 }
 
 .step2-title .title-highlight {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -98,7 +98,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   color: white;
   display: flex;
   align-items: center;
@@ -177,7 +177,7 @@
 }
 
 .audience-item {
-  color: var(--primary-orange);
+  color: var(--primary-gold);
   font-weight: 500;
 }
 

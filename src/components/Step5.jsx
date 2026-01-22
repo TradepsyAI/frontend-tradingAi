@@ -1,20 +1,18 @@
 import { motion } from 'framer-motion';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 import './Step5.css';
 
 const Step5 = () => {
-  const monthlyData = [
-    { month: 'Jan', value: 2300 },
-    { month: 'Feb', value: 1300 },
-    { month: 'Mar', value: 3600 },
-    { month: 'Apr', value: 3900 },
-    { month: 'May', value: 4900 }
+  const stats = [
+    { icon: '🚀', label: 'Learning Curve', value: 'Collapsed', color: 'gold' },
+    { icon: '📈', label: 'Path to Profit', value: 'Accelerated', color: 'gold' },
+    { icon: '🎯', label: 'Traders by 2030', value: '100,000+', color: 'gold' }
   ];
 
-  const metrics = [
-    { label: 'Win Rate', value: '68.5%' },
-    { label: 'Profit Factor', value: '2.3' },
-    { label: 'Avg R', value: '1.8R' }
+  const benefits = [
+    { icon: '⚡', text: 'Stop the break-even trap' },
+    { icon: '🧠', text: 'AI-powered analysis' },
+    { icon: '💎', text: 'Achieve consistent profitability' },
+    { icon: '🏆', text: 'Join the movement' }
   ];
 
   return (
@@ -39,60 +37,79 @@ const Step5 = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
+              <div className="step5-icon">⚡</div>
               <h2 className="step5-title">
-                Trade Journal &{' '}
-                <span className="title-highlight">Advanced Analytics</span>
+                Velocity to{' '}
+                <span className="title-highlight">Profitability</span>
               </h2>
               <p className="step5-description">
-                Every metric you need to understand your trading edge. From basic P&L to advanced statistics like expectancy, profit factor, and risk-adjusted returns.
+                It is finally time to stop spending years in the 'break-even' trap. Let TradePsyAI collapse your learning curve and accelerate your path to the profit-threshold. Our AI-nalysis has predicted that we will be helping over 100,000 traders achieve consistent profitability by 2030.
               </p>
+              <motion.div
+                className="urgency-badge"
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                ⏰ Time is running out. Join the movement
+              </motion.div>
             </motion.div>
             
-            <motion.div
-              className="performance-card"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              <div className="performance-header">
-                <h3 className="performance-title">Monthly Performance</h3>
-                <div className="performance-value">+18.3%</div>
-              </div>
-              
-              <div className="chart-container">
-                <ResponsiveContainer width="100%" height={300}>
-                  <BarChart data={monthlyData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#333" opacity={0.2} />
-                    <XAxis 
-                      dataKey="month" 
-                      stroke="#888"
-                      tick={{ fill: '#888', fontSize: 12 }}
-                    />
-                    <YAxis 
-                      stroke="#888"
-                      tick={{ fill: '#888', fontSize: 12 }}
-                      domain={[0, 6000]}
-                      ticks={[0, 1500, 3000, 4500, 6000]}
-                    />
-                    <Bar 
-                      dataKey="value" 
-                      fill="#FFA500"
-                      radius={[8, 8, 0, 0]}
-                    />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-              
-              <div className="metrics-grid">
-                {metrics.map((metric, index) => (
-                  <div key={index} className="metric-item">
-                    <div className="metric-label">{metric.label}</div>
-                    <div className="metric-value">{metric.value}</div>
-                  </div>
+            <div className="step5-visual-content">
+              <motion.div
+                className="stats-grid"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                {stats.map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    className="stat-wrapper"
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
+                  >
+                    <motion.div
+                      className="stat-card"
+                      whileHover={{ y: -5, scale: 1.02 }}
+                    >
+                      <div className="stat-icon">{stat.icon}</div>
+                      <div className="stat-label">{stat.label}</div>
+                    </motion.div>
+                    <div className="stat-value">{stat.value}</div>
+                  </motion.div>
                 ))}
-              </div>
-            </motion.div>
+              </motion.div>
+
+              <motion.div
+                className="benefits-card"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                <h3 className="benefits-title">Your Path Forward</h3>
+                <div className="benefits-list">
+                  {benefits.map((benefit, index) => (
+                    <motion.div
+                      key={index}
+                      className="benefit-item"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
+                    >
+                      <span className="benefit-icon">{benefit.icon}</span>
+                      <span className="benefit-text">{benefit.text}</span>
+                    </motion.div>
+                  ))}
+                </div>
+              </motion.div>
+            </div>
           </div>
         </div>
       </div>

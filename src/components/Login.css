@@ -122,9 +122,9 @@
 }
 
 .social-btn:hover:not(:disabled) {
-  border-color: var(--primary-orange);
+  border-color: var(--primary-gold);
   background: var(--bg-light);
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
   transform: translateY(-2px);
 }
 
@@ -142,7 +142,7 @@
 }
 
 .google-btn:hover:not(:disabled) {
-  color: var(--primary-orange);
+  color: var(--primary-gold);
 }
 
 .apple-btn {
@@ -150,7 +150,7 @@
 }
 
 .apple-btn:hover:not(:disabled) {
-  color: var(--primary-orange);
+  color: var(--primary-gold);
 }
 
 .divider {
@@ -202,8 +202,8 @@
 
 .form-group input:focus {
   outline: none;
-  border-color: var(--primary-orange);
-  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+  border-color: var(--primary-gold);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.1);
 }
 
 .form-group input:disabled {
@@ -228,7 +228,7 @@
 .btn-login-submit {
   width: 100%;
   padding: 1rem 2rem;
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   border: none;
   border-radius: 12px;
   font-size: 1.1rem;
@@ -236,12 +236,12 @@
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
   margin-top: 0.5rem;
 }
 
 .btn-login-submit:hover:not(:disabled) {
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
 }
 
 .btn-login-submit:disabled {
@@ -262,14 +262,14 @@
 }
 
 .signup-link {
-  color: var(--primary-orange);
+  color: var(--primary-gold);
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .signup-link:hover {
-  color: #FF8C5A;
+  color: var(--primary-yellow);
   text-decoration: underline;
 }
 

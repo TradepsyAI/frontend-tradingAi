@@ -4,24 +4,24 @@ import './Features.css';
 
 const features = [
   {
-    icon: '🎯',
-    title: 'Understand your Edge',
-    description: 'Deep analytics on your strategies, setups, and what actually works for your trading style.'
+    icon: '🤖',
+    title: 'Data driven AI Mentorship',
+    description: 'Harness the computational power of a digital mentor to decipher your unique market edge through neural analytics that expose hidden blind spots with mathematical precision.'
   },
   {
     icon: '🧠',
-    title: 'Track your psychology',
-    description: 'AI-powered insights into your emotional patterns, discipline issues, and behavioral habits.'
+    title: 'Understand your psychological Shortfalls',
+    description: 'Go beyond retrospective logging with an intelligent coaching engine that transforms deep data into a predictive roadmap, identifying your edge while proactively neutralizing your most costly trading biases.'
   },
   {
-    icon: '📈',
-    title: 'Refine your strategy with AI',
-    description: 'Let AI analyze thousands of data points to help you identify patterns and optimize your approach.'
+    icon: '⚖️',
+    title: 'Automated Accountability',
+    description: 'Integrate a 24/7 accountability patrol that scans your trade execution for lack of discipline, providing the friction-less oversight needed to bridge the gap between knowing your rules and actually following them.'
   },
   {
-    icon: '⚡',
-    title: 'Build consistency',
-    description: 'Daily coaching and personalized feedback to help you stick to your rules and trading plan.'
+    icon: '📊',
+    title: 'Build consistency with your AI coach',
+    description: 'Consistency isn\'t a feeling—it\'s a data-driven result. TradePsyAI will help you consistenly overcome the disconnection between your trading plan and your actual execution'
   }
 ];
 

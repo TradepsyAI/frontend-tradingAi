@@ -24,13 +24,14 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
         >
           <h1 className="hero-title">
-            <span className="title-part1">AI-powered trading</span>{' '}
-            <span className="title-part2">journal & psychology</span>{' '}
-            <span className="title-highlight">coach</span>
+            The future of trading{' '}
+            <span className="title-highlight">Mentorship is here</span>
           </h1>
           
           <p className="hero-description">
-            Track your performance, understand your psychology, and build consistency with AI-powered insights.
+            Searching for answers in spreadsheets and old school journals is in the past. 
+            With TradePsyAi, Receive expert guidance in real time.
+            Trade PsyAi transforms your raw data into a personalised coaching experience bridging the gap between where you are and where you want to be.
           </p>
           
           <form className="hero-chatbox" onSubmit={handleSubmit}>
@@ -71,22 +72,38 @@ const Hero = () => {
           </div>
           
           <div className="hero-audience">
-            <span className="audience-item">For day traders</span>
-            <span className="audience-separator">•</span>
-            <span className="audience-item">Funded traders</span>
-            <span className="audience-separator">•</span>
-            <span className="audience-item">Scalpers</span>
-          </div>
-          
-          <div className="hero-insights">
-            <div className="insight-card">
-              <span className="insight-label">Win Rate</span>
-              <span className="insight-value">68.5%</span>
-            </div>
-            <div className="insight-card">
-              <span className="insight-label">AI Insight</span>
-              <span className="insight-value">Over-traded on Tuesday</span>
-            </div>
+            <motion.span 
+              className="audience-badge"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              Day Traders
+            </motion.span>
+            <motion.span 
+              className="audience-badge"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              Scalpers
+            </motion.span>
+            <motion.span 
+              className="audience-badge"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 }}
+            >
+              Crypto Traders
+            </motion.span>
+            <motion.span 
+              className="audience-badge"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              Swing Traders
+            </motion.span>
           </div>
         </motion.div>
       </div>

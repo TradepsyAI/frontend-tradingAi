@@ -5,21 +5,21 @@ const Step1 = () => {
   const steps = [
     {
       number: 1,
-      icon: '📤',
-      title: 'Connect Your Broker',
-      description: 'Link your trading account or upload trade history in seconds. We support all major brokers.'
+      icon: '⚡',
+      title: 'Automated Extraction',
+      description: 'Your trades are instantly synced from your broker, providing TradePsyAI with the raw data, timing, and price action needed for a surgical review.'
     },
     {
       number: 2,
-      icon: '🤖',
-      title: 'AI Analyzes Performance',
-      description: 'Our AI engine processes your trades, identifies patterns, and evaluates your trading psychology.'
+      icon: '🔍',
+      title: 'Strategy Cross-Examination',
+      description: 'Leveraging deep-learning diagnostics, PsyAI cross examines documented strategy parameters against raw execution data.'
     },
     {
       number: 3,
-      icon: '📊',
-      title: 'Get Actionable Insights',
-      description: 'Receive personalized recommendations and coaching to refine your strategy and improve consistency.'
+      icon: '💬',
+      title: 'Interactive Debrief',
+      description: 'For each trade PsyAI highlights key misses and "A-ha" moments, allowing you to converse with your data to uncover exactly how to optimize your next session'
     }
   ];
 
@@ -46,11 +46,11 @@ const Step1 = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="step1-title">
-                Powerful and Automated{' '}
-                <span className="title-highlight">Trade Journaling</span>
+                AI-based{' '}
+                <span className="title-highlight">trade journaling</span>
               </h2>
               <p className="step1-description">
-                You focus on trading while we focus on helping you get better. With automated journaling, we do the heavy lifting for you.
+                Forget manual logging—meet the first journal that talks back. TradePsyAI conducts a deep-tissue scan of every execution, cross-referencing your live entries against your documented strategy in real-time. It doesn't just record what happened; it identifies the critical technical and psychological nuances you missed while you were in the heat of the trade.
               </p>
             </motion.div>
             

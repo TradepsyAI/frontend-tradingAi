@@ -14,7 +14,7 @@
 }
 
 .testimonials-title .title-gradient {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -48,9 +48,9 @@
 
 .testimonial-nav:hover {
   background: var(--gradient-light);
-  color: var(--primary-orange);
-  border-color: var(--primary-orange);
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.2);
+  color: var(--primary-gold);
+  border-color: var(--primary-gold);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
 }
 
 .testimonial-card {
@@ -69,8 +69,8 @@
 }
 
 .testimonial-card:hover {
-  border-color: var(--primary-orange);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
+  border-color: var(--primary-gold);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
 }
 
 .testimonial-card::before {
@@ -98,7 +98,7 @@
 }
 
 .star {
-  color: var(--primary-orange);
+  color: var(--primary-gold);
   font-size: 1.5rem;
 }
 
@@ -134,18 +134,18 @@
 }
 
 .dot.active {
-  background: var(--primary-orange);
+  background: var(--primary-gold);
   width: 32px;
   border-radius: 6px;
 }
 
 .dot:hover {
-  background: var(--primary-orange);
+  background: var(--primary-gold);
   opacity: 0.7;
 }
 
 .dot.active:hover {
-  background: var(--primary-orange);
+  background: var(--primary-gold);
   opacity: 1;
 }
 

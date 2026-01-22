@@ -46,11 +46,11 @@ const Step4 = () => {
               transition={{ duration: 0.6 }}
             >
               <h2 className="step4-title">
-                Broker Sync{' '}
-                <span className="title-highlight">& Trade Calendar</span>
+                Broker Auto Sync{' '}
+                <span className="title-highlight">and Trade Journal</span>
               </h2>
               <p className="step4-description">
-                Document your trading strategies and let AI help you refine them. Track which setups work best, get suggestions for improvements, and ensure you're following your rules.
+                Experience total automation with a direct-to-exchange sync. Every trade is automatically logged into the TradePsyAI Calendar, providing an interface to audit your consistency and ensure you are strictly following your protocol.
               </p>
             </motion.div>
             
@@ -62,7 +62,7 @@ const Step4 = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="brokers-header">
-                <span className="brokers-icon">💾</span>
+                <span className="brokers-icon">🔗</span>
                 <h3 className="brokers-title">Connected Brokers</h3>
               </div>
               

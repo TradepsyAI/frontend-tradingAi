@@ -178,7 +178,7 @@ const OnboardingQuiz = () => {
                     <circle cx="75" cy="45" r="3" fill="url(#gradient)"/>
                     <defs>
                       <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#FF8C42" />
+                        <stop offset="0%" stopColor="#FFA500" />
                         <stop offset="100%" stopColor="#FFD700" />
                       </linearGradient>
                     </defs>

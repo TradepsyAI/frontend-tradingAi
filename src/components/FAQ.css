@@ -32,8 +32,8 @@
 }
 
 .faq-item:hover {
-  border-color: var(--primary-orange);
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.1);
+  border-color: var(--primary-gold);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
 }
 
 .faq-question {
@@ -78,7 +78,7 @@
 
 .faq-question:hover .faq-icon {
   background: var(--gradient-light);
-  color: var(--primary-orange);
+  color: var(--primary-gold);
 }
 
 .faq-answer {

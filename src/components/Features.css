@@ -18,7 +18,7 @@
 }
 
 .title-gradient {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -48,14 +48,14 @@
 }
 
 .feature-card:hover {
-  border-color: var(--primary-orange);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
+  border-color: var(--primary-gold);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
 }
 
 .feature-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -78,7 +78,7 @@
 }
 
 .btn-cta {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   border: none;
   color: white;
   font-weight: 700;
@@ -88,12 +88,12 @@
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 .btn-cta:hover {
-  box-shadow: 0 6px 25px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 25px rgba(255, 215, 0, 0.4);
 }
 
 @media (max-width: 768px) {

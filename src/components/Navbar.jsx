@@ -51,8 +51,8 @@ const Navbar = () => {
         </Link>
         
         <ul className="navbar-links">
+          <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
           <li><a href="/#features" onClick={(e) => handleAnchorClick(e, 'features')}>Features</a></li>
-          <li><a href="/#how-it-works" onClick={(e) => handleAnchorClick(e, 'how-it-works')}>How It Works</a></li>
           <li>
             <Link 
               to="/brokers" 
@@ -103,8 +103,8 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           >
             <ul className="mobile-menu-links">
+              <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
               <li><a href="/#features" onClick={(e) => handleAnchorClick(e, 'features')}>Features</a></li>
-              <li><a href="/#how-it-works" onClick={(e) => handleAnchorClick(e, 'how-it-works')}>How It Works</a></li>
               <li>
                 <Link 
                   to="/brokers" 

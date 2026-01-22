@@ -46,7 +46,7 @@
 
 .btn-logout:hover {
   background: #d0d0d0;
-  color: var(--primary-orange);
+  color: var(--primary-gold);
 }
 
 .dashboard-stats {
@@ -68,8 +68,8 @@
 }
 
 .stat-card:hover {
-  border-color: var(--primary-orange);
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.1);
+  border-color: var(--primary-gold);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.1);
 }
 
 .stat-icon {
@@ -110,8 +110,8 @@
 }
 
 .action-card:hover {
-  border-color: var(--primary-orange);
-  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.15);
+  border-color: var(--primary-gold);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
 }
 
 .action-title {
@@ -129,7 +129,7 @@
 }
 
 .btn-action {
-  background: var(--gradient-orange);
+  background: var(--gradient-gold);
   border: none;
   color: white;
   font-weight: 600;
@@ -137,12 +137,12 @@
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
   width: 100%;
 }
 
 .btn-action:hover {
-  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -166,4 +166,7 @@
     padding: 2rem;
   }
 }
+
+
+
 

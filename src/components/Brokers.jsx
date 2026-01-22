@@ -320,21 +320,53 @@ const Brokers = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="brokers-title">
-              Brokers &{' '}
-              <span className="title-highlight">Integrations</span>
+              Broker Auto Sync{' '}
+              <span className="title-highlight">and Trade Journal</span>
             </h1>
             
-            <div className="brokers-illustration">
-              <div className="illustration-placeholder">
-                <div className="illustration-elements">
-                  <div className="illustration-worker">👷</div>
-                  <div className="illustration-buildings">🏢</div>
-                  <div className="illustration-gears">⚙️</div>
-                  <div className="illustration-arrow">↗️</div>
-                  <div className="illustration-dollar">💰</div>
+            <p className="brokers-description">
+              Experience total automation with a direct-to-exchange sync. Every trade is automatically logged into the TradePsyAI Calendar, providing an interface to audit your consistency and ensure you are strictly following your protocol.
+            </p>
+            
+            <motion.div
+              className="connected-brokers-preview"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="brokers-header-preview">
+                <span className="brokers-icon-preview">🔗</span>
+                <h3 className="brokers-title-preview">Connected Brokers</h3>
+              </div>
+              
+              <div className="brokers-preview-list">
+                <div className="broker-preview-item">
+                  <div className="broker-preview-info">
+                    <div className="broker-preview-name">TD Ameritrade</div>
+                    <div className="broker-preview-trades">142 trades synced</div>
+                  </div>
+                  <button className="broker-preview-status connected">Connected</button>
+                </div>
+                <div className="broker-preview-item">
+                  <div className="broker-preview-info">
+                    <div className="broker-preview-name">Interactive Brokers</div>
+                    <div className="broker-preview-trades">89 trades synced</div>
+                  </div>
+                  <button className="broker-preview-status connected">Connected</button>
+                </div>
+                <div className="broker-preview-item">
+                  <div className="broker-preview-info">
+                    <div className="broker-preview-name">TradeStation</div>
+                  </div>
+                  <button className="broker-preview-status ready">Ready to connect</button>
                 </div>
               </div>
-            </div>
+              
+              <div className="last-sync-preview">
+                <span>Last sync</span>
+                <span>2 minutes</span>
+              </div>
+            </motion.div>
             
             <div className="brokers-search">
               <label className="search-label">Search your broker, here:</label>
